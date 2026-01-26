@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-content">
+
+    <span class="close" onclick="closeLightbox()">×</span>
+
+    <div class="nav left" onclick="prevImage()">❮</div>
+    <img id="lightbox-img">
+    <div class="nav right" onclick="nextImage()">❯</div>
+
+  </div>
+</div>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">Mon Portfolio</h2>
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#cv">CV</a></li>
+
+    </ul>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </nav>
+
+
+  <!-- HOME -->
+
+ <section id="home" class="home fade-in">
+  <div class="home-text">
+    <span class="badge">Digital & AI Student</span>
+    <h1>Lamchaouri Ichrak</h1>
+    <p>
+      Étudiante en Génie Digital et Intelligence Artificielle,
+      passionnée par les solutions innovantes et orientées données. 
+       <span id="typing"></span>
+
+    </p>
+
+    <div class="home-actions">
+      <a href="#contact" class="btn">Me contacter</a>
+      <a href="#projects" class="btn outline">Voir mes projets</a>
+    </div>
+   
+
+
+    <div class="home-socials">
+  <a href="https://www.linkedin.com/in/ichrak-lamchaouri" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/USERNAME" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:nonaleona65@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+
+  <div class="bg-shape one"></div>
+<div class="bg-shape two"></div>
+
+</div>
+
+
+ <div class="home-stats">
+      <div>
+        <h3 id="projectsCount">0</h3>
+        <span>Projects</span>
+      </div>
+     
+      <div>
+        <h3 id="diplomaYear">—</h3>
+        <span>Diplômée</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-img">
+    <img src="meee.jpeg" alt="Profile Image">
+  </div>
+</section>
+ 
+<!-- SEPARATOR -->
+<div class="section-separator">
+  <div class="separator-track">
+    <span>WEB DEVELOPMENT</span>
+    <span>ARTIFICIAL INTELLIGENCE</span>
+    <span>Deep Learning</span>
+    <span>DATA & INNOVATION</span>
+
+    <span>WEB DEVELOPMENT</span>
+    <span>ARTIFICIAL INTELLIGENCE</span>
+    <span>Deep Learning</span>
+    <span>DATA & INNOVATION</span>
+  </div>
+</div>
+
+
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis étudiante en Génie Digital et Intelligence Artificielle,
+       avec une solide base en développement web, analyse de données et
+        systèmes intelligents. Mon parcours académique allie rigueur technique 
+        et approche pratique orientée résolution de problèmes.
+     Je m’intéresse particulièrement à la conception de solutions numériques 
+     basées sur les données et à l’application des nouvelles technologies à des
+      problématiques concrètes. Sérieuse, motivée et curieuse, je cherche 
+      continuellement à renforcer mes compétences à travers des projets académiques et professionnels.
+    </p>
+  </section>
+
+   <!-- education -->
+<section id="education" class="fade-in">
+  <h2>Education</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="time">2025 - Présent</span>
+      <h3>Cycle Ingénieur – Génie Digital & IA</h3>
+      <p>  SUPTECH SANTE</p>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time">2022 - 2024</span>
+      <h3>Technicien Supérieur</h3>
+      <p>Multimédia & Conception Web – BTS ESSAOUIRA</p>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time">2021 - 2022</span>
+      <h3>Faculté Polydisciplinaire</h3>
+      <p>Sciences Mathématiques et Informatiques – SAFI</p>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time">2020 - 2021</span>
+      <h3>Baccalauréat Sciences Physiques</h3>
+      <p>Lycée Najib Mahfoud – Safi</p>
+    </div>
+  </div>
+</section>
+
+ <!-- skills -->
+
+ <section id="skills" class="fade-in skills-section">
+  <h2>Compétences</h2>
+
+  <div class="skills-grid">
+
+    <!-- LANGUAGES -->
+    <div class="skill-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Langages</h3>
+      <div class="skill-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>Python</span>
+        <span>C++</span>
+        <span>C#</span>
+        <span>Arduino</span>
+        <span>SQL</span>
+        
+
+      </div>
+    </div>
+
+    <!-- FRAMEWORKS -->
+    <div class="skill-card">
+      <i class="fa-solid fa-layer-group"></i>
+      <h3>Frameworks</h3>
+      <div class="skill-tags">
+        <span>Laravel</span>
+        <span>Bootstrap</span>
+        <span>jQuery</span>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="skill-card">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Outils</h3>
+      <div class="skill-tags">
+        <span>VS Code</span>
+        <span>Google colab</span>
+        <span>Adobe</span>
+        <span>Matlab</span>
+        <span>GitHub</span>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+  <!-- PROJECTS -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card-img" style="background-image: url('po1.PNG');">
+      <div class="project-overlay">
+        <div class="project-desc">
+          <h3>Portfolio Website</h3>
+          <p>Site personnel pour présenter mes projets et compétences.</p>
+        </div>
+
+
+    <button onclick="openLightbox([
+  'po2.PNG',
+  'po3.PNG',
+  'po4.PNG',
+  'po5.PNG',
+  'po6.PNG',
+  'po7.PNG',
+  'po8.PNG',
+   'po9.PNG'
+])">Savoir plus</button>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card-img" style="background-image: url('zo1.PNG');">
+      <div class="project-overlay">
+        <div class="project-desc">
+          <h3>site web pour Espace pro-animaux</h3>
+          <p>Developpement d’un site web pour Espace pro-animaux.</p>
+        </div>
+
+
+    <button onclick="openLightbox([
+  'logo-zoocare-A4.png',
+  'carte visite.png',
+  'photo1719321202.jpg',
+  'panier1.jpg',
+  'panier2.jpg',
+  'panier3.jpg',
+  'zo2.PNG',
+  'zo3.PNG',
+  'zo4.PNG',
+  'zo5.PNG',
+  'zo6.PNG',
+  'zo7.PNG',
+  'zo8.PNG',
+  'zo9.PNG',
+  'zo10.PNG',
+ 
+])">Savoir plus</button>
+        <div class="project-tech">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span>
+        </div>
+      </div>
+    </div>
+
+   <!-- PROJECT 3 -->
+<div class="project-card-img" style="background-image: url('home1.JPG');">
+
+  <div class="project-overlay">
+    <div class="project-desc">
+      <h3>Site Web de Poterie</h3>
+      <p>Site e-commerce artisanal développé lors d’un stage.</p>
+    </div>
+
+    <button onclick="openLightbox([
+  'home5.JPG',
+  'cart.JPG',
+  'home3.JPG',
+  'about2.JPG',
+  'p3.JPG'
+])">Savoir plus</button>
+
+    <div class="project-tech">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+    </div>
+  </div>
+
+  
+
+</div>
+  <!-- PROJECT 5 -->
+    <div class="project-card-img" style="background-image: url('addd.jpg');">
+      <div class="project-overlay">
+        <div class="project-desc">
+          <h3>AI Project</h3>
+          <p>Classification de la Maladie d’Alzheimer à l’aide du Deep Learning</p>
+        </div>
+
+          <button onclick="openLightbox([
+  '4.PNG',
+  'ad2.png',
+  'ad3.jpg',
+  '41.PNG',
+  '43.PNG',
+    '50.PNG',
+
+
+])">Savoir plus</button>
+
+        <div class="project-tech">
+          <span>Python</span><span>TensorFlow</span><span>Keras</span><span>ResNet50</span>
+          <span>Google Colab</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- PROJECT 4 -->
+    <div class="project-card-img" style="background-image: url('WhatsApp Image 2026-01-02 at 20.21.33.jpeg');">
+      <div class="project-overlay">
+        <div class="project-desc">
+          <h3>Site web skin-care </h3>
+          <p>Création de supports visuels et branding.</p>
+        </div>
+
+
+    <button onclick="openLightbox([
+  'WhatsApp Image 2026-01-02 at 20.22.42.jpeg',
+  'WhatsApp Image 2026-01-02 at 20.23.20.jpeg'
+])">Savoir plus</button>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>PHP</span>
+        </div>
+      </div>
+    </div>
+
+  
+
+</section>
+
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+  <h2>Expériences professionnelles</h2>
+
+  <div class="project-card">
+    <h3>Stage – Groupe OCP</h3>
+    <span>Août – Septembre 2025</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Stagiaire Développement Web – BC Skills</h3>
+    <span>Mai – Juin 2024</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Stagiaire Design Graphique – Graphser</h3>
+    <span>Août 2023 | Safi</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Stage d’observation – Bluefull Communication</h3>
+    <span>Mai 2023 | Safi</span>
+  </div>
+</section>
+
+
+
+
+  <!-- CONTACT -->
+<section id="contact" class="fade-in contact-wrapper">
+  <div class="contact-card">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <i class="fa-solid fa-envelope-open-text"></i>
+      <h3>Discutons</h3>
+      <p>N’hésitez pas à m’envoyer un message.</p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+      <h2>Contactez-moi</h2>
+
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- CUSTOM ALERT -->
+<div id="customAlert" class="alert-overlay">
+  <div class="alert-box">
+    <i class="fa-solid fa-circle-check"></i>
+    <h3>Message envoyé</h3>
+    <p>Votre message a été envoyé avec succès.</p>
+    <button id="closeAlert">OK</button>
+  </div>
+</div>
+
+<!-- CV -->
+<section id="cv" class="fade-in cv-section">
+  <h2>Curriculum Vitae</h2>
+  <p>Vous pouvez télécharger mon CV en cliquant ci-dessous.</p>
+
+  <a href="lamchaouri-1.pdf" download class="btn">
+    <i class="fa-solid fa-download"></i> Download CV
+  </a>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-about">
+      <h3>Lamchaouri Ichrak</h3>
+      <p>
+        Étudiante en Génie Digital et Intelligence Artificielle,
+        passionnée par le développement web et les solutions innovantes.
+      </p>
+    </div>
+
+    <!-- CENTER : NAV LINKS -->
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email : lamchaourichrak@gmail.com</p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/ichrak-lamchaouri"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Lamchaouri Ichrak — Tous droits réservés</p>
+  </div>
+</footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
